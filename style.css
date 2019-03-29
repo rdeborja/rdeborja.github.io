@@ -2,16 +2,41 @@ body, html {
     height: 100%;
 }
 
-.title-container {
-    padding: 10%;
+.header-container {
+	height: 100%;
+	width: 100%;
+	background: url("desktop_bw.png") no-repeat center;
+    background-size: cover;
+    margin: 0 0;
+    padding: 0 0;
 }
 
-@media screen and (max-height: 450px) {
+.title-container {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    padding-top: 20%;
+    padding-left: 20%;
+}
+
+.show-border {
+	border: 2px dashed red;
+}
+
+.title-container h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+@media screen only and (max-height: 450px) {
     .title-container {
-        padding: 1%;
+        padding: 0 0;
+        margin: 0 0;
     }
 
     .title-container h1 {
         font-size: 5em;
+        background-color: rgba(0, 0, 0, 0.7);
     }
 }
