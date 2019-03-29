@@ -8,8 +8,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald:200,700" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
+            body, html {
+                height: 100%;
+            }
             a {
                 color: inherit;
             }
@@ -32,6 +35,39 @@
                 color: #FFFFFF;
                 text-align: center;
             }
+            .header-container {
+                height: 100%;
+                width: 100%;
+                background: url("desktop_bw.png") no-repeat center;
+                background-size: cover;
+                margin: 0 0;
+                padding: 0 0;
+            }
+            .title-container {
+                color: white;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                margin-top: 0;
+                padding-top: 20%;
+                padding-left: 20%;
+            }
+            .show-border {
+                border: 2px dashed red;
+            }
+            .title-container h1 {
+                font-family: "Oswald", sans-serif;
+            }
+            @media screen only and (max-height: 450px) {
+                .title-container {
+                    padding: 0 0;
+                    margin: 0 0;
+                }
+                .title-container h1 {
+                    font-size: 5em;
+                    background-color: rgba(0, 0, 0, 0.7);
+                }
+            }
         </style>
     </head>
     <body>
@@ -41,10 +77,10 @@
                 <h3>Scientific Programmer</h3>
                 <div class="social-icons" style="color: white;">
                     <a href="https://github.com/rdeborja"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/richard-de-borja-60751614/"><i class="fab fa-linkedin fa-lg"></i></a>
                     <a href="https://www.researchgate.net/profile/Richard_De_Borja2"><i class="fab fa-researchgate fa-lg"></i>
 
                     </a>
-                    <a href="https://www.linkedin.com/in/richard-de-borja-60751614/"><i class="fab fa-linkedin fa-lg"></i></a>
                 </div>
             </div>
         </div>
