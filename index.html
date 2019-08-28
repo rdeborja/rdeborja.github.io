@@ -11,125 +11,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
         <style>
-            body, html {
-                height: 100%;
-            }
-            a {
-                color: inherit;
-            }
-            .title-container h3 {
-                font-family: "Oswald", sans-serif;
-            }
-            .social-icons {
-                padding-top: 20px;
-            }
-            .social-icons a {
-                color: #FFFFFF;
-                font-size: 22px;
-                padding: 0 10px;
-            }
-            .social-icons a:hover {
-                color: #777777;
-                cursor: pointer;
-            }
-            .footer p {
-                color: #FFFFFF;
-                text-align: center;
-            }
-            .header-container {
-                height: 100%;
-                width: 100%;
-                background: url("desktop_bw.png") no-repeat center;
-                background-size: cover;
-                margin: 0 0;
-                padding: 0 0;
-            }
-            .title-container {
-                color: white;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                margin-top: 0;
-                padding-top: 20%;
-                padding-left: 20%;
-            }
-            .show-border {
-                border: 2px dashed red;
-            }
-            .title-container h1 {
-                font-family: "Oswald", sans-serif;
-            }
-            .sidenav {
-                height: 100%; /* 100% Full-height */
-                width: 0; /* 0 width - change this with JavaScript */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Stay on top */
-                top: 0; /* Stay at the top */
-                left: 0;
-                background-color: rgba(0,0,0,0.95); /* Black*/
-                overflow-x: hidden; /* Disable horizontal scroll */
-                padding-top: 60px; /* Place content 60px from the top */
-                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-            }
-            .sidenav a {
-                font-family: "Oswald", sans-serif;
-                font-weight: 200;
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 3rem;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-            }
-            .sidenav a:hover {
-                color: #f1f1f1;
-            }
-            .sidenav .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-            }
-            .container-fluid {
-                height: 100%;
-                padding: 0 0;
-            }
-            .section-container {
-                position: absolute;
-                display: table;
-                height: 100%;
-                width: 50%;
-                left: 0;
-                bottom: 0;
-            }
-            .section-text {
-                display: table-cell;
-                vertical-align: middle;
-                padding-left: 30%;
-            }
-            @media only screen and (max-width: 600px) {
-                .title-container {
-                    padding: 0 0;
-                    margin: 0 0;
-                }
-                .title-container h1 {
-                    font-size: 3em;
-                }
-                .section-container {
-                    width: 100%;
-                }
-                .section-text {
-                    padding-left: 10%;
-                }
-                .sidenav {
-                    padding-top: 10em;
-                }
-                .sidenav a {
-                    font-size: 3em;
-                }
-            }
         </style>
         <script>
             function openNav() {
@@ -137,7 +24,10 @@
             }
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
-            }        
+            }
+            .fadeIn {
+                animation-duration: 3s;
+            }
         </script>
     </head>
     <body>
@@ -152,14 +42,14 @@
                 <span style="font-size: 30px; cursor: pointer; color: #FFFFFF" onclick="openNav()">&#9776;</span>
         </div-->
 
-        <section style="height: 100%;">
+        <section>
             <div class="container-fluid header-container">
                 <div class="title-container">
                     <div class="section-container">
                         <div class="section-text">
-                            <h1>Richard <strong>de Borja</strong></h1>
-                            <h3>Scientific Programmer</h3>
-                            <div class="social-icons" style="color: white;">
+                            <h1 class="animated fadeInDown delay-.5s slow">Richard <strong>de Borja</strong></h1>
+                            <h3 class="animated fadeIn delay-1s duration-2s slow">Scientific Programmer</h3>
+                            <div class="social-icons animated fadeInUp delay-2s slow" style="color: white;">
                                 <a href="https://github.com/rdeborja"><i class="fab fa-github fa-lg"></i></a>
                                 <a href="https://www.linkedin.com/in/richard-de-borja-60751614/"><i class="fab fa-linkedin fa-lg"></i></a>
                                 <a href="https://www.researchgate.net/profile/Richard_De_Borja2"><i class="fab fa-researchgate fa-lg"></i></a>
