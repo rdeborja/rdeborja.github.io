@@ -96,10 +96,14 @@ a {
     padding-left: 30%;
 }
 .fadeInDown {
+    animation-delay: 0.5s
 }
 .fadeIn {
+    animation-delay: 2s;
+    animation-duration: 2s;
 }
 .fadeInUp {
+    animation-delay: 3s;
 }
 @media only screen and (max-width: 600px) {
     .title-container {
