@@ -95,6 +95,12 @@ a {
     vertical-align: middle;
     padding-left: 30%;
 }
+.fadeInDown {
+}
+.fadeIn {
+}
+.fadeInUp {
+}
 @media only screen and (max-width: 600px) {
     .title-container {
         padding: 0 0;
