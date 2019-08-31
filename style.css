@@ -26,7 +26,7 @@ a {
 .header-container {
     height: 100%;
     width: 100%;
-    background: url("desktop_bw.png") no-repeat center;
+    background: url("desktop_bw_2x.png") no-repeat center;
     background-size: cover;
     margin: 0 0;
     padding: 0 0;
